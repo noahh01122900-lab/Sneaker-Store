@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-Master Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            C-MASTER STORE
+        </div>
+            <nav>
+                <a href="#">MEN</a>
+                <a href="#">WOMEN</a>
+                <a href="#">KIDS</a>
+                <a href="#">SALE</a>
+                <a href="#">ABOUT US</a>
+            </nav>
+            <div class="nav-right">
+                <div class="search">
+                    🔍
+                    <input type="text" placeholder="search">
+                </div>
+    <div class="cart-container">
+
+    <button class="cart" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+    </button>
+
+    <div class="cart-panel" id="cart-panel">
+
+        <h2>Your Cart</h2>
+
+        <div id="cart-items">
+            <p class="empty-cart">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-total">
+            Total: $<span id="cart-total">0.00</span>
+        </div>
+
+        <button class="checkout">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+        </div>
+
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <p>FOREVER</p>
+            <h1>FASTER.</h1>
+        </div>
+        <div class="hero-image">
+            <img src="https://imgs.search.brave.com/45IM3rwcC076kdBwOv6WUUIx5vm4ogYtPv0UWvwLYDw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFCM08xZkhTZEwu/anBn" alt="badminton shoes">
+        </div>
+        <div class="hero-info">
+            <h2>OUSADIA</h2>
+            <p>Badminton Sneaker</p>
+            <strong>129.99$ </strong>
+
+        </div>
+
+    </section>
+
+    <section class="products">
+        <div class="product-card">
+            <button class="favorite">♡</button>
+            <img src="https://imgs.search.brave.com/9rgQGBl0fHjo1IOsQoo9I40vC3eMqY6yQsfDDP5tcWI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFGSWhDY1R5UEwu/anBn" alt="Sneaker">
+            <h3>WASHA</h3>
+            <p>89.99$</p>
+
+            <div class="rating">
+                ★★★★☆
+            </div>
+            <button onclick="addToCart('WASHA' , 89,99)">+</button>
+        </div>
+
+
+    <div class="product-card">
+            <button class="favorite">♡</button>
+        <img src="https://imgs.search.brave.com/_FZ_oa5zEJibbH2JTCoZeCdPJ7Hwe305QMAW7pTZakE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly95dW1v/LmNhL2Nkbi9zaG9w/L2ZpbGVzL0xpTmlu/Z19TYWdhX0lJX0p1/bmlvcl9XaGl0ZV9C/YWRtaW50b25fU2hv/ZXNfWXVtb3Byb3No/b3BfMTAyNHgxMDI0/LnBuZz92PTE3NjI5/ODg2Nzg" alt="Sneaker">
+
+        <h3>Street Pro</h3>
+
+        <p>$99.99</p>
+
+        <div class="rating">
+            ★★★★☆
+        </div>
+
+        <button onclick="addToCart('Street Pro' , 99,99)">+</button>
+
+    </div>
+
+
+    <div class="product-card">
+            <button class="favorite">♡</button>
+        <img src="https://imgs.search.brave.com/zZQ4SzxijP1qo8pzP4RJSlS2Z8BZ5F5HJLLXuEwuCPk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzFITXIyRGNJK0wu/anBn" alt="Sneaker">
+
+        <h3>Speed X</h3>
+
+        <p>$119.99</p>
+
+        <div class="rating">
+            ★★★★★
+        </div>
+
+        <button onclick="addToCart('Speed X' , 119.99) ">+</button>
+
+    </div>
+
+        <div class="product-card">
+            <button class="favorite">♡</button>
+        <img src="https://imgs.search.brave.com/ijMQGsRxIeiIOpGMfbFB8mb0diaN291ejZq5AOuQ83k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dmVjdG9yLXguY29t/L2Nkbi9zaG9wL2Zp/bGVzLzBMNEE5ODYw/LmpwZz92PTE3NzE2/NzA3NjMmd2lkdGg9/MTEwMA" alt="Sneaker">
+
+        <h3>Vector</h3>
+
+        <p>$109.99</p>
+
+        <div class="rating">
+            ★★★★☆
+        </div>
+
+        <button onclick="addToCart('Vector' , 109.99)">+</button>
+
+    </div>
+
+    </section>
+
+</body>
+</html>
